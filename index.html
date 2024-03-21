@@ -14,7 +14,7 @@
 </head>
 <body>
 <main class="container">
-    <header class="row" >
+    <header>
             Обери рівень складності завдання (легкий, середній чи важкий), порядок (розмір) квадрата, а потім натисни
             кнопку "Створити". Віднови квадрат так, щоб кожне число зустрічалося тільки один раз та сума чисел <br>
             у кожному рядку, стовпчику та по обох діагоналях була однаковою та дорівнювала 
@@ -51,8 +51,10 @@
 
 
     <div id="magic-square" class="row" style="margin-top: 2%; margin-bottom: 2%;">
-        <div id="const" class="col-3"></div>
-        <div id="board" class="col-9"></div>
+        <div id="const" class="col-md-3 col-sm-12"></div>
+        <div class="col-md-9  col-sm-12">
+            <div id="board" class=></div>
+        </div>
     </div>
 </main>
 
@@ -64,10 +66,6 @@
     <button type="button" aria-label="Показати підказку" class="cta cta-icon cta-secondary" onclick="help()">!</button>
     <p id="a"></p>
 </footer>
-
-
-
-
 
 <script type="text/javascript" src="js/magic-square-class.js"></script>
 <script type="text/javascript" src="js/operations.js"></script>
